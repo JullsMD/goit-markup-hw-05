@@ -15,7 +15,9 @@
 
 <body>
                     <!--HEADER-->
-<header class="page-header container">
+<header class="page-header">
+<div class="header container">
+
     <nav class="nav">
 <!-- Логотип-1 -->
       <a class="logo" href="index.html" lang="en"> <span class="accent">Web</span>Studio</a>
@@ -28,7 +30,7 @@
     </nav>
 <!-- Контакты -->
     <div class="contacts">
-      <a class="contacts-link mail" href=" underlinemailto:info@devstudio.com">
+      <a class="contacts-link mail" href="mailto:info@devstudio.com">
       <svg class="icon-mail" width="16" height="12">
         <use href="./images/icons/sprite.svg#icon-mail">
         </use>
@@ -41,23 +43,24 @@
       </svg>
         +38 096 111 11 11</a>
     </div>
+  </div>
   </header>
 
                     <!-- MAIN -->
  <main>
 <!-- Герой -->
-<div class="overlay">
-  <section class="hero">
-   <h1 class="visually-hidden">Cлоган</h1>
-   <p class="hero-text">Эффективные решения<br> для вашего бизнеса</p>
-   <button type="button" class="hero-btn">Заказать услугу</button>
-  </section>
-</div>
+<section class="hero-overlay">
+  <div class="hero">
+    <h1 class="visually-hidden">Cлоган</h1>
+    <p class="hero-text">Эффективные решения<br> для вашего бизнеса</p>
+    <button type="button" class="hero-btn">Заказать услугу</button>
+  </div>
+</section>
 
 <!-- Особенности -->
-<div class="container">
-  <section class="features">
-     <h2 class="visually-hidden">Особенности</h2>
+<section class="features">
+  <div class="container">
+    <h2 class="visually-hidden">Особенности</h2>
     
      <ul class="features-icons-list list">
 <li class="item">
@@ -112,24 +115,25 @@
       </li>
 
      </ul>
-  </section>
-</div>
+  </div>
+</section>
+
 
 <!-- Чем мы занимаемся --> 
-<div class="container">
-  <section class="section">
+<section class="section">
+  <div class="container">
      <h2 class="section-title">Чем мы занимаемся</h2>
      <ul class="wwd-list list">
       <li><img src="./images/what-we-do/squoosh/разметка.jpg" alt="создание разметки сайта" width="370" height="294"></li>
       <li><img src="./images/what-we-do/squoosh/адаптация.jpg" alt="адаптация под разные типы устройств" width="370" height="294"></li>
       <li><img src="./images/what-we-do/squoosh/дизайн.jpg" alt="создание дизайна" width="370" height="294"></li>
      </ul>
-  </section>
-</div>
+  </div>
+</section>
 
 <!-- Team -->
-<div class="team">
-  <section class="section container">
+<section class="section team">
+  <div class="container">
     <h2 class="section-title">Наша команда</h2>
 
     <ul class="team-list list">
@@ -182,6 +186,7 @@
 
        </ul>
       </li>
+
 <!-- Ольга Репина -->
       <li class="team-card">
        <img src="./images/team/squoosh/woman.jpg" alt="Блондинка в очках улыбается" width="270" height="260">
@@ -230,6 +235,7 @@
       
       </ul>
       </li>
+
 <!-- Николай Тарасов -->
       <li class="team-card">
        <img src="./images/team/squoosh/man2.jpg" alt="Мужчина в светлой рубашке смотрит налево" width="270" height="260">
@@ -277,6 +283,7 @@
         </li>
       </ul>
       </li>
+
 <!-- Михаил Ермаков -->
       <li class="team-card">
        <img src="./images/team/squoosh/man3.jpg" alt="Мужчина в очках и чёрной футболке улыбается" width="270" height="260">
@@ -325,15 +332,15 @@
       </ul>
       </li>
 
-    </ul>
-  </section>
+</ul>
 </div>
+</section>
 
 <!-- Clients -->
-<div class="container">
 <section class="section">
+<div class="container">
   <h2 class="section-title">Постоянные клиенты</h2>
-<ul class="clients-list list">
+  <ul class="clients-list list">
 
   <li class="item">
     <a class="clients-link" href="/">
@@ -384,13 +391,16 @@
   </li>
 
 </ul>
-</section>
 </div>
+</section>
+
  </main>
 
                     <!-- FOOTER -->
-<div class="footer">
-<footer class="page-footer container">
+
+<footer class="page-footer">
+<div class="footer container">
+
 <div class="address-box">
 <!-- Логотип-2 -->
    <a class="logo" href="index.html" lang="en"> <span class="accent">Web</span><span class="studio">Studio</span>
@@ -450,7 +460,8 @@
 
 </ul>
 </div>
-</footer>
 </div>
+</footer>
+
 </body>
 </html>
