@@ -105,6 +105,7 @@ p {
 
   color: var(--primary-text-color);
 }
+
 .link,
 .contact {
   font-weight: 500;
@@ -118,9 +119,25 @@ p {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
+  border-color: transparent;
 }
 .link:visited {
   color: var(--primary-text-color);
+}
+.site-nav .item::after {
+  content: "";
+
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+
+  height: 4px;
+
+  background-color: transparent;
+  border-radius: 2px;
+}
+.site-nav .item:hover::after {
+  background-color: var(--accent-color);
 }
 
 /* Контакты */
@@ -441,16 +458,19 @@ p {
 }
 .page-footer {
   display: flex;
-
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
+
 /* Логотип-2 */
 .studio {
   color: var(--primary-background-color);
 }
 
 /* Адресс */
+.address-box {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .address {
   margin-top: 20px;
 
@@ -483,6 +503,8 @@ p {
 /* socials-footer */
 
 .soc-box {
+  padding-top: 72px;
+  padding-bottom: 100px;
   margin-left: 70px;
 }
 .soc-list {
@@ -608,6 +630,7 @@ p {
 /* Card */
 .card {
   text-decoration: none;
+  border: 1px solid transparent;
 
   color: inherit;
 }
