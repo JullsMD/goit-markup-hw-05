@@ -11,6 +11,7 @@
   --icon-color: #afb1b8;
   --socials-footer: rgba(255, 255, 255, 0.1);
   --card-bgc: rgba(33, 150, 243, 0.9);
+  --wwd-img-description: rgba(47, 48, 58, 0.8);
 
   --card-set-gap: 30px;
   --features-list-gap: 30px;
@@ -18,7 +19,7 @@
 }
 
 body {
-  padding-top: 80px;
+  /* padding-top: 80px; */
 
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
@@ -63,19 +64,19 @@ p {
 
 /*  HEADER */
 
-.page-header {
-  background-color: var(--primary-background-color);
-}
 .header {
-  position: fixed;
+  /* position: fixed;
   width: 100%;
   min-height: 80px;
   top: 0;
-  left: 0;
+  left: 0; */
 
   display: flex;
   align-items: center;
+
+  background-color: var(--primary-background-color);
 }
+
 .nav {
   display: flex;
   align-items: center;
@@ -106,28 +107,11 @@ p {
   margin-left: 50px;
 }
 
-.site-nav .item::after {
-  content: "";
-
-  display: flex;
-  flex-direction: column;
-  justify-content: stretch;
-
-  height: 4px;
-
-  background-color: transparent;
-  border-radius: 2px;
-
-  transition: background-color 250ms linear, transform 250ms ease-in-out;
-}
-.site-nav .item:hover::after {
-  background-color: var(--accent-color);
-}
-
 .site-nav .link {
+  width: 100%;
   display: block;
   padding-top: 32px;
-  padding-bottom: 32px;
+  /* padding-bottom: 32px; */
 
   color: var(--primary-text-color);
 }
@@ -149,6 +133,21 @@ p {
 }
 .link:visited {
   color: var(--primary-text-color);
+}
+
+.site-nav .current::after {
+  content: "";
+
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+
+  margin-top: 32px;
+
+  height: 4px;
+
+  border-radius: 2px;
+  background-color: var(--accent-color);
 }
 
 /* Контакты */
@@ -308,6 +307,35 @@ p {
 .wwd-list {
   display: flex;
   justify-content: space-between;
+}
+
+.img-thumb img {
+  display: block;
+}
+
+.img-thumb {
+  position: relative;
+}
+.img-description {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  min-height: 70px;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: var(--wwd-img-description);
+  color: var(--primary-background-color);
 }
 
 /* Team */
