@@ -53,9 +53,21 @@
   <div class="hero">
     <h1 class="visually-hidden">Cлоган</h1>
     <p class="hero-text">Эффективные решения<br> для вашего бизнеса</p>
-    <button type="button" class="hero-btn">Заказать услугу</button>
+    <button class="hero-btn" data-modal-open>Заказать услугу</button>
   </div>
 </section>
+<!-- Модальное окно -->
+<div class="backdrop is-hidden" data-modal>
+
+  <div class="modal">
+    <button type="button" class="close-icon" data-modal-close>
+      <svg class="close" width="11" height="11">
+        <use href="./images/icons/sprite.svg#close"></use>
+      </svg>
+    </button>
+  </div>
+
+</div>
 
 <!-- Особенности -->
 <section class="features">
@@ -489,5 +501,6 @@
 </div>
 </footer>
 
+<script src="./js/modal.js"></script>
 </body>
 </html>
